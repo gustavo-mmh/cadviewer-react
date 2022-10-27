@@ -1,0 +1,76 @@
+{
+  "name": "cadviewer-testapp-react-01",
+  "version": "7.2.5",
+  "description": "CADViewer - JavaScript CAD Viewer sample implementation for ReactJS",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
+    "cadviewer": "^7.2.5",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.5.1",
+    "multer": "^1.4.5-lts.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "4.0.2",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "client": "set PORT=8000 && react-scripts start",
+    "server": "nodemon ./nodejs/cadviewer-conversion-server/CV_7.2.5.js",
+    "dev": "concurrently \"npm run server\" \" npm run client\"",
+    "build": "react-scripts build",
+    "tests": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "charnung",
+  "license": "TMS 1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CADViewer/cadviewer-testapp-react-01"
+  },
+  "bugs": {
+    "url": "https://github.com/CADViewer"
+  },
+  "homepage": "https://cadviewer.com",
+  "keywords": [
+    "CAD",
+    "javascript",
+    "CAD Viewer",
+    "DWG",
+    "DXF",
+    "DWF",
+    "PDF",
+    "DGN",
+    "TIFF",
+    "Annotate",
+    "Redline",
+    "Space Management",
+    "CAFM",
+    "IOT",
+    "Asset Management"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20"
+  }
+}
